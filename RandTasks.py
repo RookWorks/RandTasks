@@ -11,11 +11,14 @@ def tasks (name, care, chore):
         if user_input != " ":
             name.extend(user_input)
         user_input = input("Hello " +(" ".join(name))+ " would you like help deciding" 
-                        " what to do today?\n")
+                        " what to do today? (care/chore)\n")
         if user_input == "care":
             printpause("Maybe you should " +care+ "?\n")
         elif user_input == "chore":
             printpause("What if you " +chore+ "?\n")
+        else:
+            printpause("I'm sorry, I don't understand.")
+            run()
         playagain()
 
 def playagain():
