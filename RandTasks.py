@@ -8,10 +8,9 @@ def printpause(msg_to_print):
 def tasks (name, care, chore):
     while True:
         user_input = input("What is your name?\n")
-        if user_input == "":
+        if user_input != " ":
             name.extend(user_input)
-            break        
-        user_input = input("Hello would you like help deciding" 
+        user_input = input("Hello " +(" ".join(name))+ " would you like help deciding" 
                         " what to do today?\n")
         if user_input == "care":
             printpause("Maybe you should " +care+ "?\n")
