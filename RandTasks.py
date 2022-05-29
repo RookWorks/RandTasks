@@ -5,4 +5,10 @@ def printpause(msg_to_print):
     print(msg_to_print)
     time.sleep(2)
 
-def
+def run():
+    name = []
+    care = ([])
+    chore = ([])
+    tasks (name, care, chore)
+
+run()
